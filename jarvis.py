@@ -117,4 +117,8 @@ if __name__ == "__main__":
 
         elif 'search in chrome' in query:
             speak("What should I search?")
-            chromepath = ''
+            chromepath = '/usr/bin/google-chrome%s'      
+            #chromepath is location chrome's installation on computer
+
+            search = TakeCommand().lower()
+            wb.get(chromepath).open_new_tab(search+'.com')  #only open websites with '.com' at end
