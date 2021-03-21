@@ -1,5 +1,5 @@
 import pyttsx3 #pip install
-import datetime
+import datetime #for importing date and time library
 import speech_recognition as sr #pip install SpeechRecognition
 import wikipedia #pip install wikipedia
 import smtplib
